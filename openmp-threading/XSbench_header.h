@@ -72,6 +72,8 @@ typedef struct{
 	int simulation_method;
 	int binary_mode;
 	int kernel_id;
+	int user_checksum; // 1: verify against expected_checksum (-c)
+	unsigned long long expected_checksum;
 } Inputs;
 
 typedef struct{
